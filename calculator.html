@@ -1,0 +1,22 @@
+  
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Widget Cost Calculator</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/calculator.js"></script>
+</head>
+<body>
+	<!-- Error messages within inputs are not visible throughJS unless and error/invalid entry occurs -->
+<h1>Widget Cost Calculator</h1>
+<p id="results"></p>
+<form action="calculator.php" method="post" id="calculator">
+	<p id="quantityP">Quantity: <input type="number" name="quantity" id="quantity" step="1" min="1"><span class="errorMessage" id="quantityError">Please enter a valid quantity!</span></p>
+	<p id="priceP">Price: <input type="number" name="price" id="price" step="0.01" min="0.01"><span class="errorMessage" id="priceError">Please enter a valid price!</span></p>
+	<p id="taxP">Tax (%): <input type="number" name="tax" id="tax" step="0.01" min="0.01"><span class="errorMessage" id="taxError">Please enter a valid tax!</span></p>
+	<p><input type="submit" name="submit" id="submit" value="Calculate!"></p>
+</form>
+</body>
+</html>
